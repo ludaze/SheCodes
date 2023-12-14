@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    #first-header{
+        color: #1a64d6;
+    }
+    #container-div{
+        margin-top: 0;
+        text-align: center;
+       
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 15px;
+
+    }
+    #degree{
+        color: black;
+    }
+    #btn{
+        background-color: #1a64d6;
+        border-radius: 30px;
+        color: white;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+    }
+    div{
+        margin:10px;
+        padding: 5px;
+    }
+    .future_dates:hover{
+        background-color: #fffbef;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .future_dates h2{
+        font-size:large;
+        font-weight: 700;
+    }
+    p{
+        opacity: 0.7;
+    }
+    h2{
+        line-height: 48px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+    }
+</style>
+<body>
+    <div id="container-div">
+        <div>
+            <h1 id="first-header">
+                🌤
+                <br >
+                Currently 21° in Tokyo
+            </h1>
+            <h2 id="first_degree">13° / <strong>23°</strong></h2>
+        </div>
+        <div class="future_dates">
+            <h2>🌧Tomorrow</h2>
+            <p>10° / <strong>22°</strong></p>
+        </div>
+        <div class="future_dates">
+            <h2> 🌥 Saturday</h2>
+            <p>15° / <strong>17°</strong></p>
+        </div>
+        <div class="future_dates">
+            <h2>☀️ Sunday</h2>
+            <p>25° / <strong>28°</strong></p>
+        </div>
+        <div>
+            <button id="btn">Change City</button>
+        </div>
+        <div><p>Coded by Luhana Daniel</p></div>
+    </div>
+</body>
+</html>
