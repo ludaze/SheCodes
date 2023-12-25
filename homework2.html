@@ -59,9 +59,9 @@
     <div id="container-div">
         <div>
             <h1 id="first-header">
-                🌤
+                <span id="emoji">🌤</span>
                 <br >
-                Currently 21° in Tokyo
+                Currently <span id="temperature">21°</span> in <span id="city">Tokyo</span>
             </h1>
             <h2 id="first_degree">13° / <strong>23°</strong></h2>
         </div>
@@ -85,11 +85,25 @@
     <script>
         let header_display = document.getElementById("first-header")
         let button = document.querySelector("button");
-        
+        let city_display = document.getElementById("city");
+        let temp_display = document.getElementById("temperature");
+        let emoji_display = document.getElementById("emoji");
 
         function displayCity(){
             let city = prompt("What city do you live in?");
             let temperature = prompt("What temperature is it?");
+
+            if (temperature < 0) {
+                emoji_display.innerHTML  = "☹️"
+                temp_display.innerHTML  = temperature + "°C"
+                city_display.innerHTML  = city
+            } else {
+                emoji_display.innerHTML  = "😄"
+                temp_display.innerHTML  = temperature + "°C"
+                city_display.innerHTML  = city
+            }
+
+
         }
         button.addEventListener("click",displayCity);
     </script>
